@@ -59,8 +59,8 @@ submit.addEventListener("click", (e) => {
               <td class="table-cell">${score.value}</td>
               <td class="table-cell">${grade}</td>
               <td class="table-cell">
-                  <a data-bs-toggle="modal" href="#" data-bs-target="#modal" class="btn btn-primary custom-edit">Edit</a>
-                  <a  href="#" class="btn btn-outline-danger custom-delete" >Delete</a>
+                  <a data-bs-toggle="modal" href="#" data-bs-target="#modal" class="btn btn-primary btn-sm custom-edit">Edit</a>
+                  <a  href="#" class="btn btn-outline-danger btn-sm custom-delete" >Delete</a>
               </td>
             </tr>`;
   } else {
