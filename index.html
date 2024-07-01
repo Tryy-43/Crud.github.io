@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studen manage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <div class="container">
+          <a class="navbar-brand" href="#">MST</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#open"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row justify-content-end"
+            id="open"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="alert-container" class="container mt-4"></div>
+    <!-- <div class="container mt-4 d-flex justify-content-center">
+      <div class="card bg-light mb-4 w-50">
+        <div class="row g-2">
+          <div class="col-md-4">
+            <img src="Try.jpg" alt="Developer" class="card-img-top" />
+          </div>
+          <div class="col-md-8">
+            <h3 class="card-title">Front-end</h3>
+            <h5 class="card-subtitle text-body-secondary">MEY soytry</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              sequi quaerat, accusantium possimus dolorem ratione!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <h2 class="text-center mt-4">Student BaccII</h2>
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal"
+      >
+        Add Student
+      </button>
+      <div class="modal fade modal-md" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-title mt-2">
+              <h3 class="text-center text-dark">Studen Information</h3>
+            </div>
+            <div class="modal-body">
+              <form>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="form-control mb-2"
+                  id="name"
+                />
+                <input
+                  type="text"
+                  placeholder="Sex"
+                  class="form-control mt-2 mb-2"
+                  id="sex"
+                />
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="score"
+                    class="form-control"
+                    placeholder="Score"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  id="submit"
+                  class="btn btn-success mt-2 mb-2"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="table-header">
+            <tr>
+              <th scope="col" class="table-cell">Name</th>
+              <th scope="col" class="table-cell">Sex</th>
+              <th scope="col" class="table-cell">Score</th>
+              <th scope="col" class="table-cell">Grade</th>
+              <th scope="col" class="table-cell">Action</th>
+            </tr>
+          </thead>
+          <tbody id="list-student">
+            <!-- <tr class="table-row">
+              <th class="table-cell">MEY soytry</th>
+              <td class="table-cell">Male</td>
+              <td class="table-cell">98.874</td>
+              <td class="table-cell">B</td>
+              <td class="table-cell">
+                <div class="btn-group">
+                  <button class="btn btn-primary">Edit</button>
+                  <button class="btn btn-outline-danger">Delete</button>
+                </div>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
